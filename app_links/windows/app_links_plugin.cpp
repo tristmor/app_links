@@ -142,6 +142,9 @@ namespace applinks
 			case IDM_GETARGSWAS:
 				SendAppLink(hwnd);
 				break;
+			case 1026: // needed by tray_manager
+				return std::nullopt;
+				break;
 			default:
 				return DefWindowProc(hwnd, message, wparam, lparam);
 			}
