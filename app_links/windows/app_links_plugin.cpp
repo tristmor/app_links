@@ -146,7 +146,8 @@ namespace applinks
 				return std::nullopt;
 				break;
 			default:
-				return DefWindowProc(hwnd, message, wparam, lparam);
+				return std::nullopt;
+				//return DefWindowProc(hwnd, message, wparam, lparam);
 			}
 		}
 
